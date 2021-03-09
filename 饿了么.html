@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en" style="font-size: 13.33vw;"></html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/page4+2.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"> 
+    <style> 
+        .logout{
+            width: 7.5rem;
+            height: 13.344rem;
+            z-index: 50;
+            position: absolute;
+            left: 0;
+            top: 0;
+            background-color: #f5f5f5;
+          display: none;
+        }
+        .logout-set{
+            width: 7.5rem;
+            padding: 3.733vw;
+            display: flex;
+            background-color: #fff;
+            justify-content: space-between;
+            align-items: center;
+            border-top: 1px solid #eee;
+        }
+        .logout-set span{
+            font-size: .3rem;
+            font-weight: 700;
+        }
+        .logout-set div{
+            text-align: right;
+            width: 4rem;
+            font-size: .32rem;
+        }
+        .logout-set img{
+            width: 1.2rem;
+            height: 1.2rem;
+            border-radius: 50%;
+            vertical-align: middle;
+        }
+        .logout-set p{
+            display: inline-block;
+            font-size: .34rem;
+            color: #666;
+            text-align: center;
+        }
+        .logout-title{
+            width: 7.5rem;
+            height: .8rem;
+            padding: 4.267vw 0 1.867vw 3.733vw;
+            color: #999;
+            font-size: .24rem;
+            
+        }
+        .logout-set span img{
+            width: .32rem;
+           height: .32rem;
+        }
+
+       
+        .out{
+            color: #ff5339;
+            text-align: center;
+             margin-top: .6rem;
+             font-size: .32rem;
+             font-weight: 600;
+             background-color: #fff;
+             height: 1rem;
+             line-height: 1rem;
+        }
+        #no-admin{
+            font-size: .34rem;
+            width: 7.5rem;
+            height: 6.08rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            line-height: .8rem;
+        }
+        #no-admin img{
+            width: 3.94rem;
+            height: 3.94rem;
+        }
+        #no-admin h2{
+            font-size: .34rem;
+            color: #6a6a6a;
+           font-weight: 400;
+            
+        }
+        #no-admin p{
+            font-size: .28rem;
+            color: #999;
+        }
+        #no-admin button{
+            width: 2.36rem;
+            height: .76rem;
+            padding: 2.66vw;
+            border-radius: .533333vw;
+            background-color: #56d176;
+            color: #fff;
+            text-align: center;
+            font-size: .28rem;
+            outline: none;
+            border: none;
+        }
+        .dingdan{
+            width: 7.5rem;
+            height: .8rem;
+            font-size: .36rem;
+            text-align: center;
+            color: #000;
+            line-height: .8rem;
+        }
+        .wei{
+            width: 1rem;
+            overflow: hidden;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <div id="page1" class="active">
+            <header>
+                <section class="s1">
+                    <i class="position"></i><span class="wei">点击定位</span><i class="down"></i>
+                </section>
+                <section class="s2">
+                    <div class="search">
+                        <i class="seek"></i><span>搜索饱了么商家、商品名称</span>
+                    </div>
+                </section>
+            </header>
+
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="./img/饿了么1.jpg" alt=""></div>
+                    <div class="swiper-slide"><img src="./img/饿了么2.jpg" alt=""></div>
+                    <div class="swiper-slide"><img src="./img/饿了么3.jpg" alt=""></div>
+                </div>
+              
+                <div class="swiper-pagination"></div>
+            </div>
+
+            <div class="mint">
+                <div><i></i><span>美食</span></div>
+                <div><i></i><span>早餐</span></div>
+                <div><i></i><span>跑腿代购</span></div>
+                <div><i></i><span>汉堡披萨</span></div>
+                <div><i></i><span>地方小吃</span></div>
+                <div><i></i><span>米粉面馆</span></div>
+                <div><i></i><span>包子粥店</span></div>
+                <div><i></i><span>炸鸡炸串</span></div>
+            </div>
+            <div class="recommend">
+                <div class="d1">
+                    <section>
+                        <h2>品质套餐</h2>
+                        <p>搭配齐全吃得好</p>
+                        <span>立即抢购 ></span>
+                    </section>
+                    <img src="./img/会员抢购.jpg"
+                        alt="">
+                </div>
+                <div class="vip">
+                    <img src="./img/皇冠.jpg"
+                        alt="">
+                    <span class="super">超级会员*</span>
+                    <span class="redPacket">每月领20元红包</span>
+                    <a href="">立即开通 ></a>
+                </div>
+            </div>
+            <div class="stop">
+                <div class="title">
+                    一 推荐商家 一
+                </div>
+                <div class="food">
+                    <ul class="foodList">
+                        <li>综合排序<i></i></li>
+                        <li>距离最近</li>
+                        <li>销量最高</li>
+                        <li>筛选<i></i></li>
+                    </ul>
+                   
+                   <div class="js">
+                    <div id="no-admin">
+                        <img src="./img/未登陆.jpg" alt="">
+                        <h2>没有结果</h2>
+                        <p>登录后查看更多</p>
+                        <button class="outadmin">登录</button>
+                    </div>
+                   </div>
+                   <div style="height: 2rem;"></div>
+                    </div>
+                </div>
+            </div>
+       
+        <div id="page2">
+            <div class="top2">
+                <section class="top-left">
+                    <a href="">
+                        <section>
+                            <h6>金币商城</h6>
+                            <span>0元好物品在这里</span>
+                        </section>
+                      
+                        <section><img src="./img/page2商城.jpg" alt=""></section>
+                    </a>
+                </section>
+                <section class="top-right">
+                    <a href="">
+                        <div>
+                            <h6 style="color: rgb(27, 169, 225);">推荐有奖</h6>
+                            <span>20元现金拿不停</span>
+                        </div>
+                       <div class="imgRight">
+                        <img src="./img/优惠券.jpg" alt="">
+                       </div>
+                    </a>
+                    <a href="">
+                        <div>
+                            <h6 style="color: rgb(237, 102, 96);">周边优惠</h6>
+                            <span>领取口碑好券</span>
+                        </div>
+                        <div class="imgRight">
+                            <img src="./img/周边商店.jpg" alt="">
+                        </div>
+                    </a>
+                </section>
+            </div>
+            <div class="main2">
+                <div class="main-header">
+                    <p>——<img src="./img/闹钟.png" alt="">限时好礼 ——</p>
+                    <span>金币换好礼</span>
+                </div>
+                <div class="main-body">
+                    <section>
+                        <img src="./img/耳机1.jpg" alt="">
+                        <p>PS4抽奖</p>
+                        <span>200金币</span>
+                        <span>¥2200</span>
+                    </section>
+                    <section>
+                        <img src="./img/耳机2.jpg" alt="">
+                        <p>JBL耳机抽奖</p>
+                        <span>200金币</span>
+                        <span>¥500</span>
+                    </section>
+                    <section>
+                        <img src="./img/耳机3.jpg" alt="">
+                        <p>Beat头戴耳机抽奖</p>
+                        <span>150金币</span>
+                        <span>¥760</span>
+                    </section>
+                    <a href="" class="see">查看更多 > </a>
+                </div>
+            </div>
+        </div>
+        <div id="page3">
+            <div id="no-admin">
+                <img src="./img/未登陆.jpg" alt="">
+                <h2>没有结果</h2>
+                <p>登录后查看更多</p>
+                <button class="outadmin">登录</button>
+            </div>
+        </div>
+        <div id="page4">
+            <div class="header2">
+                <img src="./img/登录头像.jpg" alt="">
+                <section class="header2-admin">
+                    <p>请登录</p>
+                    <span><img src="./img/手机.png" alt=""><a href="javascript:void(0);" class="admin-set"> 176******66  ></a></span>
+                </section>
+            </div>
+            <div class="jinbi">
+                <section>
+                    <p><span>0</span><span>个</span></p>
+                    <p>红包</p>
+                </section>
+                <section>
+                    <p><span>0</span><span>个</span></p>
+                    <p>金币</p>
+                </section>
+            </div>
+
+            <div class="page4-item"><section><img src="./img/地址.png" alt=""><span>我的地址</span></section>  <span>></span></div>
+            <div class="page4-item"><section><img src="./img/商城.png" alt=""><span>金币商城</span></section>  <span>></span></div>
+
+
+
+            <div class="bottom2">
+                <div class="page4-item"><section><img src="./img/客服.png" alt=""><span>我的客服</span></section>  <span>></span></div>
+                
+                <div class="page4-item"><section><img src="./img/app.png" alt=""><span>下载饱了么app</span></section>  <span>></span></div>
+                <div class="page4-item"><section><img src="./img/规则说明.png" alt=""><span>规则中心</span></section>  <span>></span></div>
+            </div>
+           <a href="" class="zhengce ">隐私政策</a>
+
+
+           <div class="logout">
+                <div class="logout-set">
+                        <span>头像</span>
+                        <div><img src="./img/登录头像.jpg" alt=""> ></div>
+                </div>
+                <div class="logout-set">
+                    <span>用户名</span>
+                   <div><p>少年游</p> > </div>
+            </div>
+                <h5 class="logout-title">账号绑定</h5>
+                <div class="logout-set">
+                    <span><img src="./img/shouji.png" alt=""> 手机</span>
+                    <div>176****2166  ></div>
+            </div>
+            <h5 class="logout-title">安全设置</h5>
+            <div class="logout-set">
+                <span><img src="./img/shouji.png" alt=""> 登录密码</span>
+                <div><span style="color: #0089dc;">未设置</span>  ></div>
+        </div>
+        <div class="out">
+            退出登录
+          
+    </div>
+           </div>
+        </div>
+        
+
+        </div>
+        
+        <div id="admin">
+           <div><img src="./img/饿了么登录.jpg" alt=""></div>
+            <section class="account-number">
+                <input type="text" placeholder="手机号">
+                <button>获取验证码</button>
+            </section>
+            <section class="password">
+                <input type="password" placeholder="验证码">
+            </section>
+            <div class="agreement">
+                新用户登录即自动注册，并表示已同意<span>《用户服务协议》</span>和<span>《隐私政策协议》</span>
+            </div>
+            <button>
+                登录
+            </button>
+            <a href="" class="we">
+                关于我们
+            </a>
+           
+           <div> <span class="hint">
+            请填写手机号
+        </span></div>
+        </div>
+
+        <div id="bottom">
+            <section class="active">
+                <div></div>
+                <span>首页</span>
+            </section>
+            <section>
+                <div></div>
+                <span>发现</span>
+            </section>
+            <section>
+                <div></div>
+                <span>订单</span>
+            </section>
+            <section>
+                <div></div>
+                <span>我的</span>
+            </section>
+        </div>
+    </div>
+
+</body>
+<script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.5.1/jquery.js"></script>
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"> </script>
+<script type="text/javascript"
+        src="http://api.map.baidu.com/api?v=2.0&ak=QbEZy5GmCQ9eqQWKbqRTKvSqL701AMhG"></script>
+ 
+
+<script src="./js/js.js"></script>
+<script>
+    $(function(){
+
+      var MapSet = {
+          GetLocation:function(){
+              var geolocation = new BMap.Geolocation();
+              geolocation.getCurrentPosition(function(r){
+                  if(this.getStatus() == BMAP_STATUS_SUCCESS){
+                      var rp = new BMap.Point(r.point.lng,r.point.lat);
+                      var gc = new BMap.Geocoder();
+                      gc.getLocation(rp,function(rs){
+                          var addComp = rs.addressComponents;
+                          $(".s1 span").text(addComp.province + ", " + addComp.city + ", " + addComp.district + ", " + addComp.street + ", " + addComp.streetNumber);
+                      });
+                  }   
+              },{enableHighAccuracy: true})
+          }
+      };
+      $(function(){
+          MapSet.GetLocation();
+      });
+  });
+  console.log( MapSet.GetLocation());
+</script>
+
+<script>        
+    var mySwiper = new Swiper ('.swiper-container', {
+      // 垂直切换选项
+      loop: true, // 循环模式选项
+      autoplay:true,
+      // 如果需要分页器
+      pagination: {
+        el: '.swiper-pagination',
+      },
+      
+      // 如果需要前进后退按钮
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+    })        
+    </script>
+</html>
